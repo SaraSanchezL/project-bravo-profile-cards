@@ -5,15 +5,17 @@ import { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 
 //Imagenes
-import superPopLogo from "../images/superpop-logo.png";
 import FormFill from "./FormFill";
 import Preview from "./Preview";
 import Header from "./Header";
 import FormDesign from "./FormDesign";
 import ShareCard from "./ShareCard";
 import Landing from "./Landing";
+import Footer from "./Footer";
 
 function App() {
+  const [avatar, setAvatar] = useState('');
+
   const [data, setData] = useState(
     ls.get("localData", {
       palette: "1",
@@ -23,7 +25,7 @@ function App() {
       phone: "",
       linkedin: "",
       github: "",
-      photo: "Photo",
+      photo: avatar,
     })
   );
 
@@ -50,7 +52,7 @@ function App() {
       phone: "",
       linkedin: "",
       github: "",
-      photo: "",
+      photo: setAvatar(""),
     });
     setDataApi({});
   };
@@ -58,6 +60,14 @@ function App() {
   const [collapsablePalette, setcollapsablePalette] = useState(false);
   const [collapsableFill, setcollapsableFill] = useState(true);
   const [collapsableShare, setcollapsableShare] = useState(true);
+  
+
+  const updateAvatar = (avatar) => {
+    setAvatar(avatar);
+    setData({
+      ...data,photo:avatar
+    });
+  };
 
   const handleCollapsable = (ev) => {
     const oneID = ev.currentTarget.id;
@@ -79,15 +89,11 @@ function App() {
 
   return (
     <div className="App">
-
-  
       <Route path="/" exact>
         <Landing />
       </Route>
-
       <Route path="/designcards" exact>
         <Header />
-
         <main className="designmain">
           <Preview
             handleReset={handleReset}
@@ -98,6 +104,7 @@ function App() {
             dataPhone={data.phone}
             dataLinkedin={data.linkedin}
             dataGithub={data.github}
+            avatar={avatar}
           />
 
           <form className="form-section" action="" id="form">
@@ -159,7 +166,12 @@ function App() {
                   collapsableFill ? "collapsed" : ""
                 }`}
               >
-                <FormFill handleInput={handleInput} data={data} />
+                <FormFill
+                  handleInput={handleInput}
+                  data={data}
+                  updateAvatar={updateAvatar}
+                  avatar={avatar}
+                />
               </div>
             </fieldset>
 
@@ -172,14 +184,7 @@ function App() {
             />
           </form>
         </main>
-        <footer className="page__footer">
-          <h6 className="page__footer--title">Tarjetas super molonas @2021</h6>
-          <img
-            className="page__footer--logo"
-            src={superPopLogo}
-            alt="Logo de SuperPop"
-          />
-        </footer>
+        <Footer />
       </Route>
     </div>
   );
