@@ -1,3 +1,141 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.collapsed {
+  display: none;
+}
+.sharebuttongrey {
+  background-color: #d5d5d5;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+
 .card-container {
   background-image: url(https://images.assetsdelivery.com/compings_v2/ingalinder/ingalinder1603/ingalinder160300117.jpg);
   display: flex;
@@ -124,4 +262,53 @@
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   font-size: 1.2rem;
+}
+
+.rectangle-1 {
+  background-color: #438792;
+}
+.rectangle-2 {
+  background-color: #bd1010;
+}
+.rectangle-3 {
+  background-color: #eab052;
+}
+.name-1 {
+  color: #114e4e;
+}
+.name-2 {
+  color: #420101;
+}
+.name-3 {
+  color: #3e5b65;
+}
+.iconcircle-1 {
+  border: 3px solid #a2deaf;
+  transition: background-color ease 0.5s;
+}
+.iconcircle-1:hover {
+  background-color: #a2deaf;
+}
+.iconcircle-2 {
+  border: 3px solid #e95626;
+  transition: background-color ease 0.5s;
+}
+.iconcircle-2:hover {
+  background-color: #e95626;
+}
+.iconcircle-3 {
+  border: 3px solid #a0c0cf;
+  transition: background-color ease 0.5s;
+}
+.iconcircle-3:hover {
+  background-color: #a0c0cf;
+}
+.icon-1 {
+  color: #114e4e;
+}
+.icon-2 {
+  color: #420101;
+}
+.icon-3 {
+  color: #3e5b65;
 }
