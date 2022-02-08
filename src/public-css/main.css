@@ -1,3 +1,5 @@
+/* RESET */
+
 html,
 body,
 div,
@@ -121,6 +123,8 @@ table {
   border-spacing: 0;
 }
 
+/* GENERAL */
+
 * {
   box-sizing: border-box;
 }
@@ -136,28 +140,17 @@ table {
   display: none;
 }
 
+/* CARD */
+
 .card-container {
   background-image: url(https://images.assetsdelivery.com/compings_v2/ingalinder/ingalinder1603/ingalinder160300117.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 457px;
+  height: 100vh;
 }
-@media (min-width: 768px) {
-  .card-container {
-    /* height: 50px; */
-    border-radius: 6px;
-    /* width: 50%; */
-    height: 100vh;
-  }
-}
-@media (min-width: 1024px) {
-  .card-container {
-    width: 90%;
-    height: 100vh;
-  }
-}
+
 .container {
   flex-direction: column;
   justify-content: center;
@@ -178,7 +171,6 @@ table {
 .card__photo {
   width: 240px;
   height: 200px;
-  background-image: url(https://images.chicmagazine.com.mx/fDGV_iMKva6n0r5I9LoejdhgARw=/958x596/uploads/media/2020/09/24/avril-lavigne-que-fue-de.jpg);
 }
 .card__list {
   display: flex;
@@ -224,45 +216,17 @@ table {
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: 18px;
 }
 .subtitle {
   line-height: 1.25;
   font-size: 1.6rem;
   color: #54585a;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
-.reset__button {
-  width: 75px;
-  height: 30px;
-  border: solid 2px gray;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #fff;
-  box-shadow: 6px 6px #85bed1;
-  cursor: pointer;
-  transition: background-color ease 0.5s;
-  transition: border ease 0.2s;
-}
-.reset__button:hover {
-  background-color: rgba(255, 255, 255, 0.616);
-  box-shadow: 6px 6px #fb00ff;
-  border: solid 2px #fff;
-}
-.reset__button--icon {
-  width: 11px;
-  margin-top: 2px;
-  transition: background-color ease 0.5s;
-}
-.reset__button--reset {
-  font-family: "Open Sans", sans-serif;
-  color: #54585a;
-  font-size: 1.2rem;
-}
+
+/* PALETTES */
 
 .rectangle-1 {
   background-color: #438792;

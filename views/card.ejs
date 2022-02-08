@@ -36,7 +36,12 @@
           </div>
           <div
             class="card__photo profile__preview js__profile-preview"
-            style="background-image: url(<%= photo%>)"
+            style="
+              background-image: url(<%= photo%>);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            "
           ></div>
           <ul class="card__list">
             <li>
