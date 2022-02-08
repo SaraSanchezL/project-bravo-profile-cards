@@ -4,6 +4,12 @@
 const express = require("express");
 const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
+const Database = require("better-sqlite3");
+
+// Configuramos la bbdd
+
+const db = new Database("./src/db/database.db", { verbose: console.log });
+
 // Creamos el servidor
 const server = express();
 
@@ -15,13 +21,12 @@ server.use(
   })
 );
 server.set('view engine', 'ejs');
+
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
-
-const saveCards = [];
 
 // Escribimos los endpoints que queramos
 server.post("/card", (req, res) => {
@@ -39,8 +44,9 @@ server.post("/card", (req, res) => {
       ...req.body,
       id: uuidv4(),
     };
-    saveCards.push(newCardData);
-    console.log(saveCards);
+
+    const insertstmt = db.prepare(`INSERT INTO cards (uuid, palette, name, job, linkedin, email, photo, github, phone) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+    insertstmt.run(newCardData.id, newCardData.palette, newCardData.name, newCardData.job, newCardData.linkedin, newCardData.email, newCardData.photo, newCardData.github, newCardData.phone);
 
     const responseSuccess = {
       success: true,
@@ -60,10 +66,14 @@ server.post("/card", (req, res) => {
 server.get("/card/:id", (req, res) => {
   console.log(req.params.id);
 
-  const userCard = saveCards.find( card => card.id === req.params.id );
+  const querystmt = db.prepare(`SELECT * FROM cards WHERE uuid = ?`);
 
+  const userCard = querystmt.get(req.params.id);
   res.render('./card', userCard);
 });
 
 const staticServerPathWeb = "./src/public-react";
 server.use(express.static(staticServerPathWeb));
+
+const staticServerStyles = "./src/public-css";
+server.use(express.static(staticServerStyles));

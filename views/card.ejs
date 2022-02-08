@@ -16,26 +16,22 @@
       integrity="sha384AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/main.css" />
     <title>Bravo Profile Card</title>
   </head>
   <body>
     <section class="card-container">
       <div class="container">
-        <button class="reset__button js-resetBtn" type="reset" form="form">
-          <span class="reset__button--icon"
-            ><img
-              src="/static/media/trash-alt-regular.b76126b1825ea31114644346ede7544f.svg"
-              alt="Icono de Papelera" /></span
-          ><small class="reset__button--reset">Reset</small>
-        </button>
         <article class="card">
           <div class="card__title">
-            <div class="card__title--rectangle rectangle-js rectangle-1"></div>
+            <div
+              class="card__title--rectangle rectangle-js rectangle-<%= palette%>"
+            ></div>
             <div class="card__title--text">
-              <h3 class="name name-1 js-nameInput fullname-js">
-                nombre y apellidos
+              <h3 class="name name-<%= palette%> js-nameInput fullname-js">
+                <%= name%>
               </h3>
-              <h4 class="subtitle js-jobInput">Front-end Developer</h4>
+              <h4 class="subtitle js-jobInput"><%= job%></h4>
             </div>
           </div>
           <div
@@ -46,56 +42,56 @@
           ></div>
           <ul class="card__list">
             <li>
-              <div class="card__list--icon icon-js iconcircle-1">
+              <div class="card__list--icon icon-js iconcircle-<%= palette%>">
                 <a
-                  href="tel:"
-                  class="js_preview_email card__list--icon-1"
+                  href="tel:<%= phone%>"
+                  class="js_preview_email card__list--icon-<%= palette%>"
                   target="_blank"
                   rel="noreferrer"
                   ><i
-                    class="fas fa-mobile-alt card__list--icon-1 cardicon-js icon-1"
+                    class="fas fa-mobile-alt card__list--icon-<%= palette%> cardicon-js icon-<%= palette%>"
                     aria-hidden="true"
                   ></i
                 ></a>
               </div>
             </li>
             <li>
-              <div class="card__list--icon icon-js iconcircle-1">
+              <div class="card__list--icon icon-js iconcircle-<%= palette%>">
                 <a
-                  href="mailto:mailto:email@email.com"
-                  class="js_preview_email card__list--icon-1"
+                  href="mailto:<%= email%>"
+                  class="js_preview_email card__list--icon-<%= palette%>"
                   target="_blank"
                   rel="noreferrer"
                   ><i
-                    class="far fa-envelope cardicon-js icon-1"
+                    class="far fa-envelope cardicon-js icon-<%= palette%>"
                     aria-hidden="true"
                   ></i
                 ></a>
               </div>
             </li>
             <li>
-              <div class="card__list--icon icon-js iconcircle-1">
+              <div class="card__list--icon icon-js iconcircle-<%= palette%>">
                 <a
-                  href="//"
-                  class="js_preview_email card__list--icon-1"
+                  href="//<%= linkedin%>"
+                  class="js_preview_email card__list--icon-<%= palette%>"
                   target="_blank"
                   rel="noreferrer"
                   ><i
-                    class="fab fa-linkedin-in card__list--icon-1 cardicon-js icon-1"
+                    class="fab fa-linkedin-in card__list--icon-<%= palette%> cardicon-js icon-<%= palette%>"
                     aria-hidden="true"
                   ></i
                 ></a>
               </div>
             </li>
             <li>
-              <div class="card__list--icon icon-js iconcircle-1">
+              <div class="card__list--icon icon-js iconcircle-<%= palette%>">
                 <a
-                  href="https://github.com/"
-                  class="js_preview_email card__list--icon-1"
+                  href="https://github.com/<%= github%>"
+                  class="js_preview_email card__list--icon-<%= palette%>"
                   target="_blank"
                   rel="noreferrer"
                   ><i
-                    class="fab fa-github-alt card__list--icon-1 cardicon-js icon-1"
+                    class="fab fa-github-alt card__list--icon-<%= palette%> cardicon-js icon-<%= palette%>"
                     aria-hidden="true"
                   ></i
                 ></a>
