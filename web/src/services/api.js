@@ -1,4 +1,4 @@
-const EXPRESS_SERVER = `http://localhost:4000/card`
+const EXPRESS_SERVER = `https://bravo-profile-cards.herokuapp.com/card`
 
 // Fichero src/services/api.js
 const callToApi = (data) => {
