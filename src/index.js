@@ -50,7 +50,7 @@ server.post("/card", (req, res) => {
 
     const responseSuccess = {
       success: true,
-      cardURL: `http://localhost:4000/card/${newCardData.id}`,
+      cardURL: `https://bravo-profile-cards.herokuapp.com/card/${newCardData.id}`,
     };
     res.json(responseSuccess);
   } else {
