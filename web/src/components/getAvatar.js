@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import defaultAvatar from '../images/tarjetas-molonas.png';
-//import '../stylesheets/GetAvatar.css';
+import defaultAvatar from '../images/tarjetas-molonas.jpeg';
+
 
 function GetAvatar(props) {
   // creamos una propiedad de la clase que es la que vamos a usar en varios métodos para cargar la imagen
@@ -63,7 +63,7 @@ function GetAvatar(props) {
     <div className="fill__label">
       <p className="label__img">Imagen de perfil</p>
       <label className="fill__btn js__profile-trigger">
-      Añadir imagen
+        Añadir imagen
         <input
           type="file"
           ref={myFileField}
@@ -72,10 +72,10 @@ function GetAvatar(props) {
         />
       </label>
       <div className="label__container profile">
-      <div
-        className="fill__profile-pic profile__image js__profile-image"
-        style={{ backgroundImage: `url(${avatar})` }}
-      ></div>
+        <div
+          className="fill__profile-pic profile__image js__profile-image"
+          style={{ backgroundImage: `url(${avatar})` }}
+        ></div>
       </div>
     </div>
   );

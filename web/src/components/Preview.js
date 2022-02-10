@@ -20,12 +20,11 @@ const Preview = (props) => {
                   {props.dataName || "nombre y apellidos"}
                 </h3>
                 <h4 className="subtitle js-jobInput">
-                  {props.dataJob || "Front-end Developer"}
+                  {props.dataJob || "Tu curro"}
                 </h4>
               </div>
             </div>
-            <Profile avatar={props.avatar}/>
-            {/*<div className="card__photo profile__preview js__profile-preview"></div>*/}
+            <Profile avatar={props.avatar} />
             <ul className="card__list">
               <PreviewIcons
                 link={`tel:${props.dataPhone}` || "/"}
@@ -34,13 +33,13 @@ const Preview = (props) => {
               />
 
               <PreviewIcons
-                link={`mailto:${props.dataEmail || "mailto:email@email.com"}`}
+                link={`mailto:${props.dataEmail || "email@email.com"}`}
                 dataPalette={props.dataPalette}
                 className={`far fa-envelope cardicon-js icon-${props.dataPalette}`}
               />
 
               <PreviewIcons
-                link={`//${props.dataLinkedin}`}
+                link={`https://www.linkedin.com/in/${props.dataLinkedin}`}
                 dataPalette={props.dataPalette}
                 className={`fab fa-linkedin-in card__list--icon-1 cardicon-js icon-${props.dataPalette}`}
               />

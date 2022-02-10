@@ -1,5 +1,6 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import superPopLogo from "../images/superpop-logo.png";
+import Footer from "./Footer";
 const Landing = () => {
   return (
     <>
@@ -35,14 +36,15 @@ const Landing = () => {
         </Link>
       </main>
 
-      <footer className="page__footer">
+      {/* <footer className="page__footer">
         <h6 className="page__footer--title">Tarjetas super molonas @2021</h6>
         <img
           className="page__footer--logo"
           src={superPopLogo}
           alt="Logo SuperPop"
         />
-      </footer>
+      </footer> */}
+      <Footer />
     </>
   );
 };

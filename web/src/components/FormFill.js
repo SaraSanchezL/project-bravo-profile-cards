@@ -8,7 +8,7 @@ const FormFill = (props) => {
         className="fill__input fill__input-js js-fullname"
         name="name"
         id="name"
-        placeholder="Ej.: Sally Jill"
+        placeholder="Ej.: Nick Carter"
         label="Nombre Completo"
         htmlFor="name"
         handleInput={props.handleInput}
@@ -20,35 +20,20 @@ const FormFill = (props) => {
         className="fill__input fill__input-js js-job"
         name="job"
         id="job"
-        placeholder="Ej.: Front-end unicorn"
+        placeholder="Ej.: Backstreet boy"
         label="Puesto"
         htmlFor="job"
         handleInput={props.handleInput}
         value={props.data.job}
       />
-      <GetAvatar updateAvatar={props.updateAvatar} avatar={props.avatar}/>
-      {/*<div className="fill__label" htmlFor="profilePic">
-        <p className="label__img">Imagen de perfil</p>
-        <label className="fill__btn js__profile-trigger" htmlFor="img-selector">
-          Añadir imagen
-        </label>
-        <input
-          className="action__hiddenField js__profile-upload-btn hidden"
-          type="file"
-          name="photo"
-          id="img-selector"
-        />
-        <div className="label__container profile">
-          <div className="fill__profile-pic profile__image js__profile-image"></div>
-        </div>
-      </div>*/}
+      <GetAvatar updateAvatar={props.updateAvatar} avatar={props.avatar} />
 
       <InputLabel
         type="email"
         className="fill__input fill__input-js js-email"
         name="email"
         id="email"
-        placeholder="Ej.: sally-hill@gmail.com"
+        placeholder="Ej.: nick-carter@bravo.com"
         label="Email"
         htmlFor="email"
         handleInput={props.handleInput}
@@ -71,7 +56,7 @@ const FormFill = (props) => {
         className="fill__input fill__input-js js-linkedin"
         name="linkedin"
         id="linkedin"
-        placeholder="Ej.: linkedin.com/in/sally.hill"
+        placeholder="Ej.: nick-carter"
         label="Linkedin"
         htmlFor="linkedin"
         handleInput={props.handleInput}
@@ -82,7 +67,7 @@ const FormFill = (props) => {
         className="fill__input fill__input-js js-github"
         name="github"
         id="github"
-        placeholder="Ej.: @sally-hill"
+        placeholder="Ej.: @nick-carter"
         label="Github"
         htmlFor="github"
         handleInput={props.handleInput}
