@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5b15e559.css",
-    "main.js": "./static/js/main.b0bca5f9.js",
-    "static/media/superpop-logo.png": "./static/media/superpop-logo.a691220f03603d16f658.png",
+    "main.js": "./static/js/main.1a406fc9.js",
     "static/media/tarjetas-molonas.png": "./static/media/tarjetas-molonas.488717f38ae8c822e5fd.png",
     "static/media/twitter.svg": "./static/media/twitter.7e1d72c332c919e7644dd87caccc2422.svg",
     "index.html": "./index.html",
@@ -11,10 +10,10 @@
     "static/media/linkedin.svg": "./static/media/linkedin.1b34da50d00cb77745796fccc30e01fc.svg",
     "static/media/facebook.svg": "./static/media/facebook.d240e51a06fa9956971ff8c219284d36.svg",
     "main.5b15e559.css.map": "./static/css/main.5b15e559.css.map",
-    "main.b0bca5f9.js.map": "./static/js/main.b0bca5f9.js.map"
+    "main.1a406fc9.js.map": "./static/js/main.1a406fc9.js.map"
   },
   "entrypoints": [
     "static/css/main.5b15e559.css",
-    "static/js/main.b0bca5f9.js"
+    "static/js/main.1a406fc9.js"
   ]
 }
