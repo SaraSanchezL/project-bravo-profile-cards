@@ -2,9 +2,9 @@ body {
   height: 100vh;
 }
 .maincards {
-  height: 83%;
+  height: 90vh;
   width: 100%;
-  //background-color: $white-four;
+  background-color: $white-four;
   background-color: greenyellow;
   display: flex;
   flex-direction: column;
@@ -13,9 +13,9 @@ body {
   padding-right: 28px;
   padding-left: 28px;
   @media (min-width: 768px) {
-    height: 90%;
+    //height: 90%;
     justify-content: flex-end;
-    //background-color: $white-four;
+    background-color: $white-four;
     background-color: greenyellow;
   }
 
@@ -33,7 +33,7 @@ body {
     line-height: normal;
     text-align: center;
     font-family: $font-title-home;
-    // color: $color-primary;
+    color: $color-primary;
     color: rgb(253, 0, 118);
     font-size: 2rem;
     @media (min-width: 768px) {
@@ -78,7 +78,7 @@ body {
       font-family: $primary-font-family;
       line-height: normal;
       color: rgb(253, 0, 118);
-      // color: $color-font-primary;
+      color: $color-font-primary;
       font-size: 1.4rem;
       @media (min-width: 768px) {
         font-size: 1.6rem;
