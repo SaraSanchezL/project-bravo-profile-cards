@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.5b15e559.css",
+    "main.css": "./static/css/main.8d2df8bf.css",
     "main.js": "./static/js/main.2f43a940.js",
     "static/media/tarjetas-molonas.jpeg": "./static/media/tarjetas-molonas.618f810792e9659a0b8a.jpeg",
     "static/media/twitter.svg": "./static/media/twitter.7e1d72c332c919e7644dd87caccc2422.svg",
@@ -9,11 +9,11 @@
     "static/media/trash-alt-regular.svg": "./static/media/trash-alt-regular.b76126b1825ea31114644346ede7544f.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.1b34da50d00cb77745796fccc30e01fc.svg",
     "static/media/facebook.svg": "./static/media/facebook.d240e51a06fa9956971ff8c219284d36.svg",
-    "main.5b15e559.css.map": "./static/css/main.5b15e559.css.map",
+    "main.8d2df8bf.css.map": "./static/css/main.8d2df8bf.css.map",
     "main.2f43a940.js.map": "./static/js/main.2f43a940.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b15e559.css",
+    "static/css/main.8d2df8bf.css",
     "static/js/main.2f43a940.js"
   ]
 }
